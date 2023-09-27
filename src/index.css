@@ -1,0 +1,139 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@300;400;500&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background:#fca5a5 ;
+  color: #fff;
+  font-family:"Mooli";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  filter: drop-shadow(10px 10px 4px #c68383)
+}
+
+h3{
+  font-size: 20px;
+}
+
+.todo-form,
+.todo_list{
+  max-width: 400px;
+  background-color: #fff;
+  color: #3f3f46;
+  padding: 20px 15px;
+  border-radius: 5px;
+  filter: drop-shadow(10px 10px 4px #c68383);
+}
+
+.todo-form{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  /* background-color: #fef2f2; */
+}
+
+select,input{
+  font-family:"Mooli";
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 20px 125px -5px rgb(0 ,0 ,0 , 0.2), 0 8px 10px -6px rgb(0 ,0 ,0 , 0.2);
+}
+
+select:focus,input:focus, button:focus{
+  outline: none;
+  outline: #fca5a5 3px solid;
+}
+
+input{
+  font-size: 18px;
+}
+
+.todo_list{
+  margin-top: 20px;
+
+}
+
+.priority-box{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.addBtn{
+  background-color: #fca5a5;
+  transition: all .3s ease;
+  color:#fff;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 20px 125px -5px rgb(0 ,0 ,0 , 0.2), 0 8px 10px -6px rgb(0 ,0 ,0 , 0.2);
+}
+
+.addBtn:hover{
+  background-color: rgba(252, 165, 165, 0.829);
+  transform: translateY(1px);
+}
+
+/* Create Todo list section */
+
+ul{
+  display: grid;
+  gap: 20px;
+}
+
+li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: #fca5a5 1px solid;
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+
+.high{
+color: red;
+}
+
+.low{
+  color:blue;
+}
+
+.medium{
+  color: orange
+}
+
+.checkbox{
+  margin-right: 10px;
+}
+
+.done{
+  text-decoration: line-through;
+}
+
