@@ -1,17 +1,15 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@300;400;500&display=swap");
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background:#fca5a5 ;
+  background: #fca5a5;
   color: #fff;
-  font-family:"Mooli";
+  font-family: "Mooli";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,22 +17,21 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-h1{
+h1 {
   font-size: 50px;
   text-align: center;
-  filter: drop-shadow(10px 10px 4px #c68383)
+  filter: drop-shadow(10px 10px 4px #c68383);
 }
 
-h3{
+h3 {
   font-size: 20px;
 }
 
 .todo-form,
-.todo_list{
+.todo_list {
   max-width: 400px;
   background-color: #fff;
   color: #3f3f46;
@@ -43,97 +40,167 @@ h3{
   filter: drop-shadow(10px 10px 4px #c68383);
 }
 
-.todo-form{
+.todo-form {
   display: flex;
   gap: 10px;
   flex-direction: column;
   /* background-color: #fef2f2; */
 }
 
-select,input{
-  font-family:"Mooli";
+select,
+input {
+  font-family: "Mooli";
   padding: 6px 10px;
   border-radius: 5px;
   border: none;
-  box-shadow: 0 20px 125px -5px rgb(0 ,0 ,0 , 0.2), 0 8px 10px -6px rgb(0 ,0 ,0 , 0.2);
+  box-shadow: 0 20px 125px -5px rgb(0, 0, 0, 0.2), 0 8px 10px -6px rgb(0, 0, 0, 0.2);
 }
 
-select:focus,input:focus, button:focus{
+select:focus,
+input:focus,
+button:focus {
   outline: none;
   outline: #fca5a5 3px solid;
 }
 
-input{
+input {
   font-size: 18px;
 }
 
-.todo_list{
+.todo_list {
   margin-top: 20px;
-
 }
 
-.priority-box{
-  display: flex;
+.priority-box {
+  /* display: flex;
   gap: 20px;
-  align-items: center;
+  align-items: center; */
 }
 
-button{
+button {
   border: none;
   cursor: pointer;
   background-color: #fff;
 }
 
-.addBtn{
+.addBtn {
   background-color: #fca5a5;
-  transition: all .3s ease;
-  color:#fff;
+  transition: all 0.3s ease;
+  color: #fff;
   padding: 5px;
   font-size: 16px;
   border-radius: 5px;
-  box-shadow: 0 20px 125px -5px rgb(0 ,0 ,0 , 0.2), 0 8px 10px -6px rgb(0 ,0 ,0 , 0.2);
+  box-shadow: 0 20px 125px -5px rgb(0, 0, 0, 0.2), 0 8px 10px -6px rgb(0, 0, 0, 0.2);
 }
 
-.addBtn:hover{
+.addBtn:hover {
   background-color: rgba(252, 165, 165, 0.829);
   transform: translateY(1px);
 }
 
 /* Create Todo list section */
 
-ul{
+ul {
   display: grid;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
-li{
+li {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
   border: #fca5a5 1px solid;
-  padding: 3px 6px;
+  /* padding: 3px 6px; */
   border-radius: 5px;
 }
 
-.high{
-color: red;
+li > span {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-right: #fca5a5 solid 1px;
+  height: 100%;
 }
 
-.low{
-  color:blue;
+.high {
+  color: red;
 }
 
-.medium{
-  color: orange
+.low {
+  color: blue;
 }
 
-.checkbox{
+.medium {
+  color: orange;
+}
+
+.checkbox {
   margin-right: 10px;
 }
 
-.done{
+.done {
   text-decoration: line-through;
 }
 
+.form_upper_container {
+  display: flex;
+}
+
+label {
+  font-size: 12px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.delete_btn {
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 1px solid red;
+  color: red;
+  box-shadow: 0 20px 125px -5px rgb(0, 0, 0, 0.2), 0 8px 10px -6px rgb(0, 0, 0, 0.2);
+}
+
+.delete_btn:hover {
+  transform: translateY(0.5px);
+}
+
+input[type="date"] {
+  font-size: 13px;
+}
+
+.list_date {
+  font-size: 12px;
+}
+
+footer {
+  margin-top: 300px;
+}
+.footer_inner {
+  text-align: center;
+  font-size: 20px;
+}
+.sort_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.sort_box div {
+  display: flex;
+  flex-direction: column;
+}
+
+.sort_box span {
+  font-size: 12px;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
